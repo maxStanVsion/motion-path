@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #4e4d4d;
+        }
+        .rect {
+            height: 32px;
+            width: 64px;
+            background-color: turquoise;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .p-relative {
+            position: relative;
+        }
+
+        .circle {
+            display: inline-block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: violet;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="p-relative">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <svg width="878" height="297" viewBox="0 0 878 297" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="circle-path" d="M194.499 86.9996C-7.67939 166.227 -69.2552 286.876 96.6602 294.748C644.661 320.748 1220.96 -70.4745 623.499 13.0001" stroke="#FF6F1F" stroke-width="2" stroke-linecap="round"/>
+            </svg>            
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
